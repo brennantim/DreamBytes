@@ -182,3 +182,34 @@ body.dark-mode .dark-mode-toggle:before {
   transform: translateX(20px); /* Move the circle to the right when active */
   background-color: #ddd; /* Change the circle color in dark mode for contrast */
 }
+
+
+.library-container {
+  max-width: 1200px; /* Adjust based on your preference */
+  margin: 30px auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.stories-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Space between items */
+}
+
+.story {
+  width: 200px; /* Adjust based on your preference */
+  margin: 10px;
+}
+
+.story img {
+  width: 100%; /* Make image fill the container */
+  border-radius: 5px; /* Consistent with your style */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+}
+
+.story p {
+  color: #4a3933; /* Consistent with your existing color scheme */
+  margin-top: 5px;
+}
