@@ -1,0 +1,184 @@
+body {
+  font-family: 'Lora', serif; /* Elegant serif font choice */
+  line-height: 1.7; /* Slightly increased spacing for reading ease */
+  color: #222; /* Darker text for improved contrast */
+  background-color: #e2e0dd; /* Warm, subtle background */
+  padding: 30px; 
+  margin: 0; /* Reset default margins for better control */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Fixed positioning */
+  top: 0; /* Flush with the top */
+  left: 0; /* Flush with the left side */
+  right: 0; /* Flush with the right side */
+  background-color: #fff; /* Background color for the header */
+  z-index: 1000; /* Ensure it's above other content */
+  padding: 10px 30px; /* Padding inside the header */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.header-container a {
+  text-decoration: none; /* No underline */
+  color: #4a3933; /* Link color */
+  font-family: 'Lora', serif; /* Elegant font choice */
+  font-size: 18px; /* Readable font size */
+}
+
+/* Style for dark mode */
+body.dark-mode .header-container {
+  background-color: #333; /* Dark background for the header in dark mode */
+  color: #f0f0f0; /* Light text color for content in dark mode */
+  box-shadow: 0 2px 5px rgb(101, 101, 101); /* Subtle shadow for depth */
+}
+
+body.dark-mode .header-container a {
+  color: #f0f0f0; /* Light link color for dark mode */
+}
+
+body {
+  padding-top: 60px; /* Adjust this value based on the height of your fixed header */
+}
+
+.container {
+  max-width: 700px; /* Slightly narrowed for focused reading */
+  margin: 30px auto; 
+  background: #fff;
+  padding: 30px; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Softer shadow */
+  border-radius: 5px; /* Added slight rounded corners */
+}
+
+.page-title {
+  font-family: 'Playfair Display', serif; /* A distinctive and elegant font */
+  text-align: center; /* Center-align the title */
+  font-size: 36px; /* Large font size for prominence */
+  color: #4a3933; /* A deep, warm color for the title text */
+  margin-bottom: 30px; /* Space after the title */
+  padding-top: 20px; /* Space above the title */
+}
+
+/* Style for dark mode */
+body.dark-mode .page-title {
+  color: #f0f0f0; /* A light color for the title text in dark mode */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Playfair Display', serif; /* Distinctive header font */
+  font-size: 28px; /* Larger for prominence */
+}
+
+h2 {
+  color: #4a3933; /* A deep, warm color */
+  margin-bottom: 25px;
+}
+
+.chapter img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 30px auto 5px;
+  border-radius: 5px; /* Match container's rounded corners */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); /* Subtle image depth */
+}
+
+p {
+  text-indent: 0; /* Remove indent for modern appearance */
+  margin: 25px 0;
+  margin-left: 30px; /* Add left margin instead */
+  font-size: 18px;
+}
+
+.image-caption {
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.the-end {
+    text-align: center;
+    padding-top: 60px;  
+}
+
+.the-end p {
+    font-family: 'Georgia', serif; /* Or another elegant serif */
+    text-align: center;
+    font-size: 2.2em;  
+    margin: 40px auto 60px; 
+    color: #666; /* Slightly muted gray */
+}
+
+ .story-divider {
+      border: 0; 
+      height: 1px; 
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)); /* Optional fancy gradient */
+      margin: 50px 0; 
+ }
+
+ body.dark-mode .story-divider {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+ body.dark-mode {
+  background-color: #222222; 
+  color: #f0f0f0; 
+}
+
+/* Adjust .container styles when body has .dark-mode class */
+body.dark-mode .container {
+  background-color: #333;
+  color: #f0f0f0; /* If you want the text color inside the container to change as well */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .container .image-caption {
+  color: #919090; /* Lighter text color for better readability in dark mode */
+}
+
+/* Add dark mode adjustments for h1, h2, p, img, etc., inside .container when dark mode is active */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode .container p {
+  color: #ddd; /* Example color change for text elements */
+}
+
+/* Dark Mode Toggle Styles */
+.dark-mode-toggle {
+  background-color: #f0f0f0; /* Light mode background */
+  border: 2px solid #ccc; /* Border makes it look more like a switch */
+  border-radius: 20px; /* Rounded edges */
+  width: 40px; /* Width of the toggle */
+  height: 20px; /* Height of the toggle */
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.dark-mode-toggle:before {
+  content: '';
+  position: absolute;
+  top: 2px; /* Slight offset from the top */
+  left: 2px; /* Start from the left side */
+  width: 16px; /* Width of the circle inside the toggle */
+  height: 16px; /* Height of the circle inside the toggle */
+  background-color: #fff; /* Circle is white */
+  border-radius: 50%; /* Make it a circle */
+  transition: transform 0.3s ease; /* Smooth transition for moving the circle */
+}
+
+/* Adjust the toggle for when dark mode is active */
+body.dark-mode .dark-mode-toggle {
+  background-color: #666; /* Dark mode background */
+}
+
+body.dark-mode .dark-mode-toggle:before {
+  transform: translateX(20px); /* Move the circle to the right when active */
+  background-color: #ddd; /* Change the circle color in dark mode for contrast */
+}
