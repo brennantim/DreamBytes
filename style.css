@@ -35,8 +35,9 @@ body.dark-mode .header-container {
   box-shadow: 0 2px 5px rgb(101, 101, 101); /* Subtle shadow for depth */
 }
 
-body.dark-mode .header-container a {
-  color: #f0f0f0; /* Light link color for dark mode */
+body.dark-mode .header-container a,
+body.dark-mode .story p {
+    color: #f0f0f0; /* Lighter color for better visibility */
 }
 
 body {
@@ -199,17 +200,44 @@ body.dark-mode .dark-mode-toggle:before {
 }
 
 .story {
-  width: 200px; /* Adjust based on your preference */
+  width: 240px; /* Adjust based on your preference */
   margin: 10px;
 }
 
 .story img {
-  width: 100%; /* Make image fill the container */
-  border-radius: 5px; /* Consistent with your style */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+    width: 100%; /* Ensure image fills the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Keep rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Maintain shadow for depth */
 }
 
+/* Ensure text remains centered and adjust font size if necessary */
 .story p {
-  color: #4a3933; /* Consistent with your existing color scheme */
-  margin-top: 5px;
+    text-align: center;
+    font-size: 16px; /* Optional: Adjust font size for better readability */
+    color: #4a3933; /* Default color for light mode */
+    margin-top: 8px; /* Adjust spacing as needed */
 }
+
+
+.site-footer p {
+    text-align: center; /* Centers the text */
+    padding: 10px 0; /* Adds padding above and below the text */
+    margin-top: 30px; /* Ensures there's space between the content and the footer */
+    left: 0; /* Flush with the left side */
+    right: 0; /* Flush with the right side */
+    font-family: 'Lora', serif; /* Consistent font family */
+    font-size: 10px; /* Appropriately sized font */
+    
+}
+
+body.dark-mode .site-footer {
+    color: #f0f0f0; /* Lighter color for dark mode */
+    
+}
+
+a, .header-container a, body.dark-mode .header-container a, .story p a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Optional: ensures links inherit the text color from their parent elements */
+}
+
