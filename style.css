@@ -241,3 +241,28 @@ a, .header-container a, body.dark-mode .header-container a, .story p a {
     color: inherit; /* Optional: ensures links inherit the text color from their parent elements */
 }
 
+
+@media (max-width: 768px) {
+  body {
+    padding: 0; /* Removes padding on mobile */
+  }
+
+  .header-container {
+    padding: 10px 15px; /* Reduces padding inside the header on mobile */
+  }
+
+  .container, .library-container {
+    padding: 15px; /* Reduces padding for these containers on mobile */
+    margin: 15px auto; /* Adjusts margin for better spacing */
+  }
+
+  .page-title, .chapter img, .story p, .image-caption {
+    margin-left: 0; /* Removes specific left margins if set */
+    margin-right: 0; /* Removes specific right margins if set */
+  }
+
+  p {
+    margin: 15px 0; /* Adjusts paragraph margin for mobile */
+  }
+}
+
