@@ -205,10 +205,12 @@ body.dark-mode .dark-mode-toggle:before {
 }
 
 .story img {
-    width: 100%; /* Ensure image fills the container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Keep rounded corners */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Maintain shadow for depth */
+  width: 100%; 
+  height: auto; 
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); 
+  display: block; /* Ensures image displays as a block element */
+  margin: 5px auto 0;  /* Small margin on top, auto on sides, none on bottom */
 }
 
 /* Ensure text remains centered and adjust font size if necessary */
@@ -266,3 +268,19 @@ a, .header-container a, body.dark-mode .header-container a, .story p a {
   }
 }
 
+
+.story .pub-date { 
+  font-size: 12px; 
+  color: #a0a0a0; /* Slightly muted color */
+  display: block; /* Makes the date occupy its own line */
+  margin-bottom: 5px;
+}
+
+.page-title { 
+  font-family: 'Playfair Display', serif; /* Distinctive title font */
+  text-align: center;
+  font-size: 48px; /* Increase size */
+  color: #33221f; /* A rich, warm brown */
+  margin-bottom: 30px; 
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.2); /* Subtle text shadow for depth */
+}
