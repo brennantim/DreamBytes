@@ -2,7 +2,7 @@ body {
   font-family: 'Lora', serif; /* Elegant serif font choice */
   line-height: 1.7; /* Slightly increased spacing for reading ease */
   color: #222; /* Darker text for improved contrast */
-  background-color: #e2e0dd; /* Warm, subtle background */
+  background-color: #fff; /* Warm, subtle background */
   padding: 30px; 
   margin: 0; /* Reset default margins for better control */
 }
@@ -283,4 +283,33 @@ a, .header-container a, body.dark-mode .header-container a, .story p a {
   color: #33221f; /* A rich, warm brown */
   margin-bottom: 30px; 
   text-shadow: 2px 2px 3px rgba(0,0,0,0.2); /* Subtle text shadow for depth */
+}
+.story-tags {
+  font-size: 14px; /* Smaller than the story title for distinction */
+  color: #666; /* Muted color compared to the title */
+  text-align: center; /* Center-align the tags */
+  margin-top: 5px; /* Space between the title and tags */
+}
+
+body.dark-mode .story-tags {
+  color: #aaa; /* Lighter color for visibility in dark mode */
+}
+
+.story-tag {
+  display: inline-block; /* Makes the tag a block element but allows it to sit inline */
+  padding: 3px 5px; /* Adds some padding inside the tag */
+  margin: 5px; /* Adds space around each tag */
+  border: 1px solid #4a3933; /* Solid border with the color of your choice */
+  border-radius: 5px; /* Rounded corners for the tag */
+  font-size: 12px; /* Smaller font size for tags */
+  color: #4a3933; /* Text color for the tag */
+  background-color: #fff; /* Background color for the tag */
+  text-decoration: none; /* Removes underline from links, if your tags are links */
+}
+
+/* Optional: Style for tags in dark mode */
+body.dark-mode .story-tag {
+  border-color: #ddd; /* Lighter border in dark mode */
+  color: #ddd; /* Lighter text color in dark mode */
+  background-color: #333; /* Darker background in dark mode */
 }
